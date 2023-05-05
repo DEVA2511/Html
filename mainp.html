@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .profile {
+        width: 18rem;
+        border: 1px solid #d53535;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <li><a href="profile.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Profiles <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li class="columns">
+                <a href="./pages/profile1.html">profile1</a>
+              </li>
+
+              <li class="col">
+                <a class="nav-link" id="profile3" href="./pages/profile2.html"
+                  >Profile 2</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile4" href="./pages/profile3.html"
+                  >Profile 3</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <form action="/logout" method="post">
+              <button type="submit" class="btn btn-link nav-link">
+                Logout
+              </button>
+            </form>
+          </li>
+        </ul>
+        <h3><b>Welcome to Home screen</b></h3>
+      </div>
+    </div>
+    <div class="container profilelist" style="display: flex">
+      <div class="card profile">
+        <img
+          class="card-img-top"
+          src="./img/profile.webp"
+          alt="em.jpg"
+          style="width: 100%; height: auto"
+        />
+
+        <div
+          class="card-body"
+          style="
+            background-color: #fbf8f8;
+            border: 1px solid #fefefe;
+            border-radius: 0 0 10px 10px;
+          "
+        >
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor.
+          </p>
+        </div>
+
+        <div class="card-link">
+          <a href="./pages/profile1.html">
+            <button style="background-color: rgb(147, 147, 239); color: white">
+              View Profile
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card profile">
+        <img
+          class="card-img-top"
+          src="./img/profile.webp"
+          alt="vp.jpg"
+          style="width: 100%; height: auto"
+        />
+        <div
+          class="card-img-overlay d-flex align-items-end"
+          style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px"
+        ></div>
+        <div
+          class="card-body"
+          style="
+            background-color: #fbf8f8;
+            border: 1px solid #fefefe;
+            border-radius: 0 0 10px 10px;
+          "
+        >
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor.
+          </p>
+        </div>
+
+        <div class="card-link">
+          <a href="./pages/profile2.html">
+            <button style="background-color: rgb(147, 147, 239); color: white">
+              View Profile
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="card profile">
+        <img
+          class="card-img-top"
+          src="./img/profile.webp"
+          alt="jb.jpg"
+          style="width: 100%; height: auto"
+        />
+        <div
+          class="card-img-overlay d-flex align-items-end"
+          style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px"
+        ></div>
+        <div
+          class="card-body"
+          style="
+            background-color: #fbf8f8;
+            border: 1px solid #fefefe;
+            border-radius: 0 0 10px 10px;
+          "
+        >
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor.
+          </p>
+        </div>
+
+        <div class="card-link">
+          <a href="./pages/profile3.html">
+            <button style="background-color: rgb(147, 147, 239); color: white">
+              View Profile
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
